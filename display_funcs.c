@@ -129,6 +129,6 @@ int display_s(va_list argptr, prmts_t *prmts)
 		{
 			add += _putchar(*s);
 		}
-		return (add);
 	}
+	return (add);
 }

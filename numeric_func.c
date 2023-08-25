@@ -46,7 +46,7 @@ char *change(long int digit, int ground, int tags, prmts_t *prmts)
 
 int display_notsigned(va_list argptr, prmts_t *prmts)
 {
-	unsigned long int dns;
+	unsigned long dns;
 
 	if (prmts->h_modi)
 		dns = (unsigned short int)va_arg(argptr, unsigned int);
@@ -55,7 +55,7 @@ int display_notsigned(va_list argptr, prmts_t *prmts)
 	else
 		dns = (unsigned int)va_arg(argptr, unsigned int);
 	prmts->nosign = 1;
-	return (display_digit(change(1, 10, CHANGE_NOTSIGNED, prmts), prmts));
+	return (display_digit(change(dns, 10, CHANGE_NOTSIGNED, prmts), prmts));
 }
 
 /**

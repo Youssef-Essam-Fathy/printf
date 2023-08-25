@@ -29,11 +29,10 @@ int display_from_to(char *begin, char *end, char *exclude)
  **/
 
 int display_rev(va_list argptr, prmts_t *prmts)
-{
+{	
+	int length, rts = 0;
 	char *ast = va_arg(argptr, char *);
 	(void)prmts;
-	int length;
-	int rts = 0;
 
 	if (ast)
 	{
@@ -55,13 +54,11 @@ int display_rev(va_list argptr, prmts_t *prmts)
 
 int display_rot13(va_list argptr, prmts_t *prmts)
 {
-	(void)prmts;
-	int rr;
-	int rt13;
-	int inc = 0;
+	int rr, rt13, inc = 0;
 	char ary[] =
 		"NOPQRSTUVWXYZABCDEFGHIJKLM nopqrstuvwxyzabcdefghijklm";
 	char *ras = va_arg(argptr, char *);
+	(void)prmts;
 
 	rr = 0;
 	rt13 = 0;
