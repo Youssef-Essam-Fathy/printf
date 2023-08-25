@@ -56,7 +56,7 @@ int display_rot13(va_list argptr, prmts_t *prmts)
 {
 	int rr, rt13, inc = 0;
 	char ary[] =
-		"NOPQRSTUVWXYZABCDEFGHIJKLM nopqrstuvwxyzabcdefghijklm";
+		"NOPQRSTUVWXYZABCDEFGHIJKLM	nopqrstuvwxyzabcdefghijklm";
 	char *ras = va_arg(argptr, char *);
 	(void)prmts;
 
