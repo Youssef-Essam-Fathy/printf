@@ -29,7 +29,7 @@ int display_from_to(char *begin, char *end, char *exclude)
  **/
 
 int display_rev(va_list argptr, prmts_t *prmts)
-{	
+{
 	int length, rts = 0;
 	char *ast = va_arg(argptr, char *);
 	(void)prmts;
