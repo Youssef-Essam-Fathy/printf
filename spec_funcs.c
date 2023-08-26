@@ -15,7 +15,7 @@ int (*grep_spec(char *sp))(va_list argptr, prmts_t *prmts)
 		{"s", display_string},
 		{"%", display_percent},
 		{"b", display_binary},
-"		{"o", display_octal},
+		{"o", display_octal},
 		{"u", display_notsigned},
 		{"x", display_hexa},
 		{"X", display_HEXA},
